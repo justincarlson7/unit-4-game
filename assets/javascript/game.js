@@ -53,21 +53,51 @@ jewelThree = randomNum1();
     // jewelOneTotal += jewelOne;
     jewelCounter += jewelOne;
 
-    console.log("This is my counter  total: " + jewelCounter);
+    if (jewelCounter === compRandoNumber) {
+
+console.log("You win!!!");
+
+    }
+
+    else if (jewelCounter >= compRandoNumber) { 
+
+
+console.log("You lose!!!");
+
+
+    }
+
+    //console.log("This is my counter  total: " + jewelCounter);
 
   
     // console.log("This is my jewel one total: " + jewelOneTotal);
 
-    $("#addHere1").append("<div class='col-md-12'>" + jewelOne + "</div>");
+    $("#jewelCounterHtml").html("<a>" + jewelCounter + "</a>");
   });
 
 
 
   $("#jewel2").on("click", function() {
-  
-    console.log("This is my random number: " + jewelTwo);
 
-    $("#addHere2").append("<div class='col-md-12'>" + jewelTwo + "</div>");
+    jewelCounter += jewelTwo;
+
+    if (jewelCounter === compRandoNumber) {
+
+      console.log("You win!!!");
+      
+          }
+      
+          else if (jewelCounter >= compRandoNumber) { 
+      
+      
+      console.log("You lose!!!");
+      
+      
+          }
+  
+   // console.log("This is my random number: " + jewelTwo);
+
+    $("#jewelCounterHtml").html("<a>" + jewelCounter + "</a>");
 
 
   });
@@ -78,10 +108,25 @@ jewelThree = randomNum1();
   $("#jewel3").on("click", function() {
    
   
+    jewelCounter += jewelThree;
+    // console.log("This is my random number: " + jewelThree);
 
-    console.log("This is my random number: " + jewelThree);
+     if (jewelCounter === compRandoNumber) {
 
-    $("#addHere3").append("<div class='col-md-12'>" + jewelThree + "</div>");
+console.log("You win!!!");
+
+    }
+
+    else if (jewelCounter >= compRandoNumber) { 
+
+
+console.log("You lose!!!");
+
+
+    }
+
+    $("#jewelCounterHtml").html("<a>" + jewelCounter + "</a>");
+
   });
 });
 
