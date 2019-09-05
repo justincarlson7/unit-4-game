@@ -42,7 +42,7 @@ $(document).ready(function() {
 
   ranComp();
 
-  $("#compRandoNumberHtml").html("<h2> Match this number: " + compRandoNumber + "</h2>");
+  $("#compRandoNumberHtml").html("<h2>Click on the bugs to match this number: " + compRandoNumber + "</h2>");
 
   $("#winsHtml").html("<h2> Wins: 0</h2>");
   $("#lossesHtml").html("<h2> Losses: 0</h2>");
@@ -61,7 +61,8 @@ $(document).ready(function() {
       wins++;
       $("#winsHtml").html("<h2> Wins:" + wins + "</h2>");
       $("#yourOutcomeHtml").html("<h2> You Win!!!!</h2>");
-      $("#yourOutcomeHtml" ).fadeOut(5000);
+      // $("#yourOutcomeHtml").addClass("animated fadeInLeftBig");
+      // $("#yourOutcomeHtml" ).fadeOut(5000);
       //need a jquery remove somehwhere
       console.log("You win!!!" + wins);
 
@@ -75,12 +76,13 @@ $(document).ready(function() {
       jewelFour = randomNum1();
       jewelCounter = 0;
 
-      $("#compRandoNumberHtml").html("<h2> Match this number: " + compRandoNumber + "</h2>");
+      $("#compRandoNumberHtml").html("<h2>Click on the bugs to match this number: " + compRandoNumber + "</h2>");
     } else if (jewelCounter >= compRandoNumber) {
       losses++;
-      $("#lossesHtml").html("<h2> Loses:" + losses + "</h2>");
+      $("#lossesHtml").html("<h2> Losses: " + losses + "</h2>");
       $("#yourOutcomeHtml").html("<h2> You Lose!!!!</h2>");
-      $( "#yourOutcomeHtml" ).fadeOut(5000);
+      $("#yourOutcomeHtml").addClass("animated bounceOutLeft");
+      // $( "#yourOutcomeHtml" ).fadeOut(5000);
       //need a jquery remove somehwhere
       console.log("<h2> You Lose!!!!</h2>" + losses);
 
@@ -94,7 +96,7 @@ $(document).ready(function() {
       jewelFour = randomNum1();
       jewelCounter = 0;
 
-      $("#compRandoNumberHtml").html("<h2> Match this number: " + compRandoNumber + "</h2>");
+      $("#compRandoNumberHtml").html("<h2>Click on the bugs to match this number: " + compRandoNumber + "</h2>");
     }
 
     //console.log("This is my counter  total: " + jewelCounter);
@@ -123,7 +125,7 @@ $(document).ready(function() {
 
       jewelFour = randomNum1();
       jewelCounter = 0;
-      $("#compRandoNumberHtml").html("<h2> Match this number: " + compRandoNumber + "</h2>");
+      $("#compRandoNumberHtml").html("<h2>Click on the bugs to match this number: " + compRandoNumber + "</h2>");
     } else if (jewelCounter >= compRandoNumber) {
       losses++;
       $("#lossesHtml").html("<h2> Losses:" + losses + "</h2>");
@@ -141,7 +143,7 @@ $(document).ready(function() {
 
       jewelFour = randomNum1();
       jewelCounter = 0;
-      $("#compRandoNumberHtml").html("<h2> Match this number: " + compRandoNumber + "</h2>");
+      $("#compRandoNumberHtml").html("<h2>Click on the bugs to match this number: " + compRandoNumber + "</h2>");
     }
 
     // console.log("This is my random number: " + jewelTwo);
@@ -168,7 +170,7 @@ $(document).ready(function() {
 
       jewelFour = randomNum1();
       jewelCounter = 0;
-      $("#compRandoNumberHtml").html("<h2> Match this number: " + compRandoNumber + "</h2>");
+      $("#compRandoNumberHtml").html("<h2>Click on the bugs to match this number: " + compRandoNumber + "</h2>");
     } else if (jewelCounter >= compRandoNumber) {
       losses++;
       $("#lossesHtml").html("<h2> Losses:" + losses + "</h2>");
@@ -185,7 +187,7 @@ $(document).ready(function() {
 
       jewelFour = randomNum1();
       jewelCounter = 0;
-      $("#compRandoNumberHtml").html("<h2> Match this number: " + compRandoNumber + "</h2>");
+      $("#compRandoNumberHtml").html("<h2>Click on the bugs to match this number: " + compRandoNumber + "</h2>");
     }
 
     $("#jewelCounterHtml").html("<h2> Number of Bugs: " + jewelCounter + "</h2>");
@@ -211,7 +213,7 @@ $(document).ready(function() {
 
       jewelFour = randomNum1();
       jewelCounter = 0;
-      $("#compRandoNumberHtml").html("<h2> Match this number: " + compRandoNumber + "</h2>");
+      $("#compRandoNumberHtml").html("<h2>Click on the bugs to match this number: " + compRandoNumber + "</h2>");
     } else if (jewelCounter >= compRandoNumber) {
       losses++;
       $("#lossesHtml").html("<h2> Losses:" + losses + "</h2>");
@@ -228,7 +230,7 @@ $(document).ready(function() {
 
       jewelFour = randomNum1();
       jewelCounter = 0;
-      $("#compRandoNumberHtml").html("<h2> Match this number: " + compRandoNumber + "</h2>");
+      $("#compRandoNumberHtml").html("<h2>Click on the bugs to match this number: " + compRandoNumber + "</h2>");
     }
 
     $("#jewelCounterHtml").html("<h2> Number of Bugs: " + jewelCounter + "</h2>");
